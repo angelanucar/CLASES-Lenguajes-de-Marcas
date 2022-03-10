@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EJEMPLO 1.
+Crear un XML que almacene distintas direcciones con las siguientes subetiquetas
+1. Ciudad.
+2. Codigo postal
+3. Calle.
+-->
+<direcciones>
+    <pais nombre="Espania"/>
+    <direccion id="0" ciudad="Pontevedra" codigo-postal="22222" calle="Calle desconocida"/>
+    <direccion id="1">
+        <ciudad>Madrid</ciudad>
+        <codigo-postal>28645</codigo-postal>
+        <calle>Ronda de Poniente</calle>
+    </direccion>
+    <direccion id="2">
+        <ciudad>Tres Cantos</ciudad>
+        <codigo-postal>28665</codigo-postal>
+        <calle>Ronda de Ningun Lado</calle>
+    </direccion>
+    <direccion id="3">
+        <ciudad>Paris</ciudad>
+        <codigo-postal>11111</codigo-postal>
+        <calle>Ronda del PSG</calle>
+    </direccion>
+</direcciones>

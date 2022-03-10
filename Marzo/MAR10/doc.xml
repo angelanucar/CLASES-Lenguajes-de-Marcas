@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- REGLAS XML
+1. Los documentos XML deben tener etiqueta raiz (solo 1).
+2. Los documentos XML deben tener etiqueta de cierre.
+3. Los documentos XML distinguen entre mayusculas y minusculas.
+4. Los documentos XML deben tener la primera linea SIEMPRE igual 
+-->
+<raiz>
+    <subetiqueta id="1" nombre="cosa">Contenido</subetiqueta>
+</raiz>
