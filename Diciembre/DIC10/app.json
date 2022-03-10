@@ -1,0 +1,12 @@
+{
+    "director" : "Serafin",
+    "coordinador" : "Hammu",
+    "ciclos" : {
+        "dam" : "Desarrollo de Aplicaciones Multiplataforma",
+        "son" : "Sonido"
+    },
+    "profesores" : {
+        "dam" : ["Paco", "Sergio", "Naza"],
+        "mkt" : "Esther"
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 NOV 21</title>
+    <style>
+        /* > afecta a los hijos p directos de .contenedor*/
+        .contenedor > p{
+            color: blueviolet;
+        }
+        .contenedor > *{
+            background-color: burlywood !important;
+        }
+        /* + afecta al primer elemento p que estan despues del cierre de div (primero) */
+        .contenedor div + p {
+            color: blue !important;
+        }
+
+        /* ~ afecta a los elementos p que estan despues del cierre de div (primero y siguientes) */
+        .contenedor div ~ p {
+            color: green !important;
+        }
+
+        .calc{
+            height: 200px;
+            background-color: cadetblue;
+            width: calc(100vh - 300px);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="calc"></div>
+    <div class="contenedor">
+        <h1>TITULAZO</h1>
+        <p>asjkdgsauidfgi</p>
+        <div>
+           <p> Primer Parrafo </p>
+        </div>
+        <p> Segundo Parrafo </p>
+        <p> Tercero Parrafo </p>
+    </div>
+</body>
+
+</html>

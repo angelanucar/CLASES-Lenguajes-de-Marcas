@@ -1,0 +1,35 @@
+/* Aplicacion CSS sobre etiqueta, id y clase */
+p {
+    color: blue;
+}
+
+#uno{
+    color: red;
+    font-size: 25px; /* CAMBIAR TAMAÑO */          
+}
+
+.uno{
+    color: green;
+}
+
+/* Aplicacion sobre el nav. Objetivo centrar elementos */
+nav{
+    text-align: center; /* Centrar contenido */
+}
+
+nav ul li {
+    list-style: none; /* Eliminar punto de la lista */
+    display: inline-block; /* Elementos en horizontal */
+}
+
+table{
+    border: 6px solid greenyellow;
+    border-radius: 11%;
+}
+
+button{
+    border-radius: 50%;
+    background-color: lightskyblue;
+    color: red
+}
+

@@ -1,0 +1,42 @@
+body{
+    background-color: rosybrown;
+}
+
+header{
+    background-color: aqua;
+}
+
+nav{
+    background-color: blue;
+}
+
+aside{
+    background-color: salmon;
+    width: 30%;
+}
+
+article{
+    background-color: chartreuse;
+    width: 70%;
+}
+
+section{
+    background-color: crimson;
+}
+
+footer{
+    background-color: goldenrod;
+}
+
+/* clase para maquetar el aside y el article */
+.flexbox{
+    display: flex;
+    width: 100%;
+}
+
+.flexbox-article{
+    display: flex;
+    justify-content: end;
+    /* align-items: center; */
+    width: 100%;
+}
