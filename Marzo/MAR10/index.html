@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead></thead>
+        <tbody id="filas"></tbody>
+    </table>
+</body>
+<script>
+    // 1. Instanciar XMLHttpRequest 
+    var xhttp = new XMLHttpRequest();
+
+    //2. Comprobar si la peticion ha finalizado con exito
+    xhttp.onreadystatechange = function () {
+        // readyState recibe un 4 cuando la peticion ha finalizado
+        // status recibe un 200 cuando si realizada con exito
+        if (this.readyState == 4 && this.status == 200) {
+            // TRABAJO CON DATOS
+            // LEER LOS DATOS CON FORMATO TEXT (responseText) O FORMATO XML (responseXML)
+            // console.log(this.responseXML.childNodes[1].childNodes[1].getAttribute('nombre'));
+            // console.log(this.responseText);
+            escribirDatos(this.responseXML);
+        }
+    };
+    // 3 y 4 Abren el fichero una vez la peticion ha sido realizada con exito
+    // open(TIPO PETICION, FICHERO A ABRIR, ¿?)
+    xhttp.open("GET", "direccion.xml", true);
+    xhttp.send();
+
+    /**
+     * Realiza una lectura del fichero XML para escribir sus datos en una tabla
+     */
+
+    function escribirDatos(xml){
+        let direcciones = xml.getElementsByTagName('direccion');
+        console.log(direcciones);
+
+        // Accedo al punto de la tabla donde introducir los datos
+        let bodyTable = document.getElementById('filas');
+        bodyTable.innerHTML = `
+        <tr>
+            <td> ID ${direcciones[0].getAttribute('id')} </td>
+            <td> CIUDAD ${direcciones[0].getAttribute('ciudad')} </td>
+            <td> CODIGO POSTAL ${direcciones[0].getAttribute('codigo-postal')} </td>
+            <td> CALLE ${direcciones[0].getAttribute('calle')} </td>
+        </tr>
+        `;
+
+        //Elementos con subetiquetas
+        for(let i = 1; i < direcciones.length; i++){
+            console.log(direcciones[i].childNodes);
+            bodyTable.innerHTML += `
+            <tr>
+                <td> ID ${direcciones[i].getAttribute('id')} </td>
+                <td> CIUDAD ${direcciones[i].childNodes[1].innerHTML} </td>
+                <td> CODIGO POSTAL ${direcciones[i].childNodes[3].innerHTML} </td>
+                <td> CALLE ${direcciones[i].childNodes[5].innerHTML}</td>
+            </tr>
+            `;
+        }
+    }
+</script>
+
+</html>

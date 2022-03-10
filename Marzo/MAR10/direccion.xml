@@ -9,8 +9,11 @@ Crear un XML que almacene distintas direcciones con las siguientes subetiquetas
     <pais nombre="Espania"/>
     <direccion id="0" ciudad="Pontevedra" codigo-postal="22222" calle="Calle desconocida"/>
     <direccion id="1">
+        asdasd
         <ciudad>Madrid</ciudad>
+        HOOOOOOOOOLA
         <codigo-postal>28645</codigo-postal>
+        AAAAAAAAAAADIOS
         <calle>Ronda de Poniente</calle>
     </direccion>
     <direccion id="2">
