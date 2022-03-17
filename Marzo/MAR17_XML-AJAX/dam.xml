@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dam>
+    <primero>
+        <modulo id="" nombre="" contenido=""/>
+        <modulo id="" nombre="" contenido=""/>
+        <modulo id="" nombre="" contenido=""/>
+        <modulo id="" nombre="" contenido=""/>
+        <modulo id="" nombre="" contenido=""/>
+        <modulo id="" nombre="" contenido=""/>
+    </primero>
+    <segundo>
+        <modulo id="" nombre="" contenido=""/>
+        <modulo id="" nombre="" contenido=""/>
+        <modulo id="" nombre="" contenido=""/>
+        <modulo id="" nombre="" contenido=""/>
+        <modulo id="" nombre="" contenido=""/>
+        <modulo id="" nombre="" contenido=""/>
+    </segundo>
+</dam>
