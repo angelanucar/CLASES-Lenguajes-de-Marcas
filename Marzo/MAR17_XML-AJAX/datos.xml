@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personal>
+    Esto es childNodes 0
+    <profesores>
+        TEXTO DE ETIQUETAS DE PROFES
+        <profesor id="1111111P" nombre="Sergio" grupo="DAM, DAW" />
+        <profesor id="2222222G" nombre="Francisco" grupo="DAM, ASIR" />
+    </profesores>
+    Esto es childNodes 2
+    <pas>
+
+    </pas>
+    Esto es childNodes 4
+</personal>
